@@ -47,7 +47,7 @@ public static WebDriver initilizeBrowser() throws IOException
 		        System.out.println("No matching browser");
 		     }
       
-       driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),capabilities);
+       driver = new RemoteWebDriver(new URL("http://localhost:8080/wd/hub"),capabilities);
 		
 	}
 	else if(getProperties().getProperty("execution_env").equalsIgnoreCase("local"))
